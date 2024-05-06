@@ -68,6 +68,27 @@ app.post('/login', async (req, res) => {
     }
 });
 
+// Rota para cadastrar uma nova receita
+app.post('/cadastrar-receita', async (req, res) => {
+    const { imagem, titulo, ingredientes, descricao, modo_preparo } = req.body;
+
+    try {
+        // Query para inserir os dados no banco de dados
+        const query = `
+            INSERT INTO receitas (imagem, titulo, ingredientes, descricao, modo_preparo)
+            VALUES ($1, $2, $3, $4, $5)
+        `;
+        const values = [imagem, titulo, ingredientes, descricao, modo_preparo];
+
+        // Executa a query
+        await pool.query(query, values);
+        res.status(200).send('http://127.0.0.1:5500/View/index.html');
+    } catch (err) {
+        console.error('Erro ao cadastrar receita:', err.stack);
+        res.status(500).send('Erro ao cadastrar receita.');
+    }
+});
+
 // Iniciar o servidor
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`);
