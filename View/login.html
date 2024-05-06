@@ -23,19 +23,22 @@
     </header>
     <div class="container">
 
-
-
-        <h1>Login</h1>
-        <form action="http://localhost:3000/login" method="POST">
-            <label for="username">Email:</label>
-            <input type="text" id="username" name="email" required>
-            <br>
-            <label for="password">Senha:</label>
-            <input type="password" id="password" name="senha" required>
-            <br>
-            <input type="submit" value="Login">
-        </form>
-    </div>
+        <div class="login">
+            <div class="imglogin">
+                <img src="../Assets/Imagens/user.png" alt="" style="width: 150px;">
+            </div>
+            <div class="formulario">
+                <label for="lnome">Nome de Usuário</label>
+                <input type="text" id="lnome" name="nome" placeholder="Insira seu username">
+    
+                <label for="lsenha">Senha</label>
+                <input type="text" id="lsenha" name="senha" placeholder="Insira sua senha">
+    
+                <div class="enviarlogin">
+                    <input type="submit" id="lenviar" name="enviar">
+                </div>
+            </div>
+        </div>
 
     <footer>
         <p>&copy; 2024 Site de Culinária. Todos os direitos reservados.</p>
