@@ -8,47 +8,314 @@ body {
     padding: 0;
 }
 
-h1  {
-    text-align: center;
-}
-
-form {
-    max-width: 400px;
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1100px;
+    height: 425px;
+    background: #eeeeee;
+    border-radius: 20px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+  }
+  
+  .login .imglogin {
+    display: flex;
+    align-items: center;
+  }
 
-label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}
-
-input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #494d49;
-    color: #fff;
+  
+  .login .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 90px;
+    width: 700px;
+    height: 425px;
+  }
+  
+  .formulario input {
+    width: 160px;
+    height: 30px;
+    margin-top: 7px;
+    border: solid 1px #c0c0c0;
+    border-radius: 17px;
+    padding: 5px;
+  }
+  
+  ::placeholder {
+    color: black;
+  }
+  
+  .formulario label {
+    font-family: "Lilita One", sans-serif;
+  }
+  
+  .formulario input:not(:last-child) {
+    width: 155px;
+  }
+  
+  #lsenha {
+    margin-bottom: 40px;
+  }
+  
+  .enviarlogin input {
+    width: 150px;
+    height: 45px;
+    border-radius: 27px;
     border: none;
-    border-radius: 3px;
+    background: #3ac9c5;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 17px;
     cursor: pointer;
-}
-
-/* Responsive styles */
-@media screen and (max-width: 600px) {
-    form {
-        max-width: 300px;
+    transition: 0.3s;
+  }
+  
+  .enviarlogin input:hover {
+    background: #41dfd9;
+  }
+  
+  
+  
+  /* RESPONSIVIDADE */
+  @media screen and (max-width: 1280px) {
+    .navbar {
+      margin-bottom: 30px;
     }
-}
+  
+    .login {
+      display: flex;
+      flex-direction: column;
+      height: 700px;
+      width: 630px;
+      margin-bottom: 30px;
+    }
+  
+    .login .imglogin img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 630px;
+      border-radius: 20px 20px 20px 20px;
+    }
+  
+    .login .formulario {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px; /* Espaçamento interno */
+      box-sizing: border-box; /* Inclui padding na largura total */
+      margin: 0;
+    }
+  
+    .formulario input {
+      margin-bottom: 20px;
+    }
+  
+    #lnome {
+      width: 220px;
+      height: 40px;
+      border-radius: 27px;
+    }
+  
+    #lsenha {
+      width: 220px;
+      height: 40px;
+      border-radius: 27px;
+    }
+  
+    .enviarlogin input {
+      width: 100%;
+      width: 170px;
+      height: 50px;
+      margin-top: 20px;
+    }
+  
+    .menu {
+      display: block;
+      /* Exibir o menu */
+   }
+  
+   .close-btn {
+      display: block;
+      /* Exibir o botão fechar */
+   }
+  
+   .menu-toggle {
+      display: block;
+      /* Exibir o ícone do menu */
+   }
+  
+   .col-1 {
+      margin-bottom: 20px;
+   }
+  
+   .navegacao2 {
+     display: none;
+    }
+  }
+  
+  
+  
+  /* RESPONSIVIDADE */
+  @media screen and (max-width: 800px) {
+    .navbar {
+      margin-bottom: 30px;
+    }
+  
+    .login {
+      display: flex;
+      flex-direction: column;
+      height: 680px;
+      width: 550px;
+      margin-bottom: 30px;
+    }
+  
+    .login .imglogin img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 550px;
+      border-radius: 20px 20px 20px 20px;
+    }
+  
+    .login .formulario {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      padding: 20px; /* Espaçamento interno */
+      box-sizing: border-box; /* Inclui padding na largura total */
+      margin: 0;
+    }
+  
+    .formulario input {
+      margin-bottom: 20px;
+    }
+  
+    #lnome {
+      width: 220px;
+      height: 40px;
+      border-radius: 27px;
+    }
+  
+    #lsenha {
+      width: 220px;
+      height: 40px;
+      border-radius: 27px;
+    }
+  
+    .enviarlogin input {
+      width: 100%;
+      width: 170px;
+      height: 50px;
+      margin-top: 20px;
+    }
+  
+    .menu {
+      display: block;
+      /* Exibir o menu */
+   }
+  
+   .close-btn {
+      display: block;
+      /* Exibir o botão fechar */
+   }
+  
+   .menu-toggle {
+      display: block;
+      /* Exibir o ícone do menu */
+   }
+  
+   .col-1 {
+      margin-bottom: 20px;
+   }
+  
+   .navegacao2 {
+     display: none;
+    }
+  }
+  
+  
+  
+  
+  
+  @media screen and (max-width: 570px) {
+    .navbar {
+      margin-bottom: 40px;
+    }
+  
+    .login {
+      display: flex;
+      flex-direction: column;
+      height: 500px;
+      width: 310px;
+      margin-bottom: 10px;
+    }
+  
+    .login .imglogin img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 310px;
+      border-radius: 15px 15px 15px 15px;
+    }
+  
+    .login .formulario {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+      margin: 0;
+    }
+  
+    .formulario input {
+      margin-bottom: 20px;
+    }
+  
+    #lnome {
+      width: 170px;
+      height: 35px;
+      border-radius: 27px;
+    }
+  
+    #lsenha {
+      width: 170px;
+      height: 35px;
+      border-radius: 27px;
+    }
+  
+    .enviarlogin input {
+      width: 100%;
+      width: 190px;
+      height: 50px;
+      margin-top: 20px;
+    }
+  
+    .menu {
+      display: block;
+      /* Exibir o menu */
+   }
+  
+   .close-btn {
+      display: block;
+      /* Exibir o botão fechar */
+   }
+  
+   .menu-toggle {
+      display: block;
+      /* Exibir o ícone do menu */
+   }
+  
+   .col-1 {
+      margin-bottom: 20px;
+   }
+  
+   .navegacao2 {
+     display: none;
+    }
+  
+  }

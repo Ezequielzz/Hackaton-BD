@@ -17,7 +17,7 @@
                 <li><a href="./cadastro.html">Cadastro</a></li>
                 <li><a href="./login.html">Login</a></li>
                 <li><a href="./perfil.html">Perfil</a></li>
-                <li><a href="#">Postar</a></li>
+                <li><a href="./receitas.html">Postar</a></li>
             </ul>
         </nav>
     </header>
@@ -25,17 +25,22 @@
 
 
 
-        <h1>Login</h1>
-        <form>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br>
-            <input type="submit" value="Login">
-        </form>
-    </div>
+        <div class="login">
+            <div class="imglogin">
+                <img src="../Assets/Imagens/user.png" alt="" style="width: 150px;">
+            </div>
+            <div class="formulario">
+                <label for="lnome">Nome de Usuário</label>
+                <input type="text" id="lnome" name="nome" placeholder="Insira seu username">
+    
+                <label for="lsenha">Senha</label>
+                <input type="text" id="lsenha" name="senha" placeholder="Insira sua senha">
+    
+                <div class="enviarlogin">
+                    <input type="submit" id="lenviar" name="enviar">
+                </div>
+            </div>
+        </div>
 
     <footer>
         <p>&copy; 2024 Site de Culinária. Todos os direitos reservados.</p>
