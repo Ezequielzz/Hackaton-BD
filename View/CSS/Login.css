@@ -20,6 +20,7 @@ body {
   }
   
   .login .imglogin {
+    padding: 20px;
     display: flex;
     align-items: center;
   }
@@ -88,9 +89,8 @@ body {
     .login {
       display: flex;
       flex-direction: column;
-      height: 700px;
+      height: 580px;
       width: 630px;
-      margin-bottom: 30px;
     }
   
     .login .imglogin img {
