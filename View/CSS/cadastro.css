@@ -9,7 +9,7 @@
     margin: 0 auto;
     padding-bottom: 20px;
     margin-bottom: 30px;
-  }
+  } 
   
   .cadastro .imgCadastro {
     padding: 20px;
@@ -37,8 +37,7 @@
     width: 45%; /* Cada formulário ocupa 45% do espaço */
   }
   
-  .formulario input,
-  .formulario2 input {
+  .formulario input {
     width: calc(100% - 10px); /* Para levar em consideração a borda de 2px (5px de cada lado) */
     height: 45px;
     margin-top: 7px;
@@ -52,8 +51,7 @@
     font-family: 'Lilita One', sans-serif;
   }
   
-  .formulario input:not(:last-child),
-  .formulario2 input:not(:last-child) {
+  .formulario input:not(:last-child) {
     margin-bottom: 30px;
   }
   
