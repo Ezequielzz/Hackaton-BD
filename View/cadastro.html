@@ -29,33 +29,35 @@
       <div class="imgCadastro">
         <img src="/Assets/Imagens/user.png" alt="Imagem Login">
       </div>
-      <div class="formularios">
-        <div class="formulario">
-          <label for="lnome">Nome de Usuário</label>
-          <input type="text" id="lnome" name="" placeholder="Insira seu username">
+      <form action="http://localhost:3000/cadastro" method="POST">
+        <div class="formularios">
+          <div class="formulario">
+            <label for="lnome">Nome de Usuário</label>
+            <input type="text" id="lnome" name="nome" placeholder="Insira seu username">
 
-          <label for="lemail">Email</label>
-          <input type="text" id="lemail" name="" placeholder="Insira seu email">
+            <label for="lemail">Email</label>
+            <input type="text" id="lemail" name="email" placeholder="Insira seu email">
 
-          <label for="lsenha">Senha</label>
-          <input type="text" id="lsenha" name="" placeholder="Insira sua senha">
+            <label for="lsenha">Senha</label>
+            <input type="text" id="lsenha" name="senha" placeholder="Insira sua senha">
+          </div>
+          <div class="formulario">
+            <label for="">Data de Nascimento</label>
+            <input type="text" id="" name="dataNascimento" placeholder="Insira sua data de nascimento">
+
+            <label for="">Telefone</label>
+            <input type="text" id="telefone" name="telefone" placeholder="Insira seu telefone">
+
+            <label for="">Endereço</label>
+            <input type="text" id="" name="endereco" placeholder="Insira seu endereço">
+          </div>
         </div>
-        <div class="formulario">
-          <label for="">Data de Nascimento</label>
-          <input type="text" id="" name="" placeholder="Insira sua data de nascimento">
-
-          <label for="">Telefone</label>
-          <input type="text" id="" name="" placeholder="Insira seu telefone">
-
-          <label for="">Endereço</label>
-          <input type="text" id="" name="" placeholder="Insira seu endereço">
+        <div class="formulario3">
+          <div class="enviarCadastro">
+            <input type="submit" id="lenviar" name="enviar">
+          </div>
         </div>
-      </div>
-      <div class="formulario3">
-        <div class="enviarCadastro">
-          <input type="submit" id="lenviar" name="enviar">
-        </div>
-      </div>
+      </form>
     </div>
   </div>
 
