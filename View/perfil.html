@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login - Meu Site de Culinária</title>
-    <link rel="stylesheet" href="./CSS/Login.css">
+    <link rel="stylesheet" href="./CSS/perfil.css">
     <link rel="stylesheet" href="./CSS/Style.css">
+    <title>Perfil do Usuário</title>
 </head>
 <body>
     <header>
@@ -11,7 +11,7 @@
         <button class="hamburger">&#9776;</button>
         <nav>
             <ul>
-                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#">Cadastro</a></li>
                 <li><a href="/View/login.html">Login</a></li>
                 <li><a href="./perfil.html">Perfil</a></li>
@@ -20,18 +20,19 @@
         </nav>
     </header>
 
-    <h1>Login</h1>
-    <form>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br>
-        <input type="submit" value="Login">
-    </form>
+    <div class="container">
+        <h1>Perfil do Usuário</h1>
+        <div class="profile">
+            <img src="#" alt="">
+            <div>
+                <h2>Nome do Usuário</h2>
+                <p>Email: usuario@example.com</p>
+                <p>Localização: Cidade, Estado</p>
+            </div>
+        </div>
+        <p>Outras informações sobre o usuário...</p>
+    </div>
 
-    
     <footer>
         <p>&copy; 2024 Site de Culinária. Todos os direitos reservados.</p>
     </footer>
