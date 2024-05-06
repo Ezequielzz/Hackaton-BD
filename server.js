@@ -45,6 +45,29 @@ app.post('/cadastro', async (req, res) => {
     }
 });
 
+app.post('/login', async (req, res) => {
+    const { email, senha } = req.body;
+
+    try {
+        // Consulta para verificar se o usuário existe e a senha está correta
+        const query = `
+            SELECT * FROM usuarios WHERE email = $1 AND senha = $2
+        `;
+        const values = [email, senha];
+        const result = await pool.query(query, values);
+
+        // Se houver um usuário correspondente, o login é bem-sucedido
+        if (result.rows.length > 0) {
+            res.status(200).send('http://127.0.0.1:5500/View/perfil.html');
+        } else {
+            res.status(401).send('Email ou senha incorretos.');
+        }
+    } catch (err) {
+        console.error('Erro ao realizar login:', err.stack);
+        res.status(500).send('Erro ao realizar login.');
+    }
+});
+
 // Iniciar o servidor
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`);
