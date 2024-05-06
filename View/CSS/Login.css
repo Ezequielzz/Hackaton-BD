@@ -98,7 +98,6 @@ body {
       justify-content: center;
       align-items: center;
       width: 630px;
-      border-radius: 20px 20px 20px 20px;
     }
   
     .login .formulario {
@@ -114,7 +113,7 @@ body {
       margin-bottom: 20px;
     }
   
-    #lnome {
+    #lemail {
       width: 220px;
       height: 40px;
       border-radius: 27px;
@@ -178,7 +177,6 @@ body {
       justify-content: center;
       align-items: center;
       width: 550px;
-      border-radius: 20px 20px 20px 20px;
     }
   
     .login .formulario {
@@ -195,7 +193,7 @@ body {
       margin-bottom: 20px;
     }
   
-    #lnome {
+    #lemail {
       width: 220px;
       height: 40px;
       border-radius: 27px;
@@ -260,7 +258,6 @@ body {
       justify-content: center;
       align-items: center;
       width: 310px;
-      border-radius: 15px 15px 15px 15px;
     }
   
     .login .formulario {
@@ -276,7 +273,7 @@ body {
       margin-bottom: 20px;
     }
   
-    #lnome {
+    #lemail {
       width: 170px;
       height: 35px;
       border-radius: 27px;

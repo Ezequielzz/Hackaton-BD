@@ -29,8 +29,7 @@
     margin-top: 20px;
   }
   
-  .formulario,
-  .formulario2 {
+  .formulario {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -46,8 +45,7 @@
     padding: 5px;
   }
   
-  .formulario label,
-  .formulario2 label {
+  .formulario label {
     font-family: 'Lilita One', sans-serif;
   }
   
